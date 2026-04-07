@@ -14,6 +14,32 @@ font-family:'Segoe UI',sans-serif;
 background:#fff0f5;
 }
 
+/* BOTÓN VOLVER */
+.btn-volver{
+position: fixed;
+top: 50%;
+left: 15px;
+transform: translateY(-50%);
+background: #000;
+color: #fff;
+width:45px;
+height:45px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:18px;
+z-index:1001;
+text-decoration:none;
+box-shadow:0 0 10px rgba(0,0,0,0.5);
+transition:0.3s;
+}
+.btn-volver:hover{
+background:#E75480;
+color:#fff;
+transform: translateY(-50%) scale(1.1);
+}
+
 /* NAVBAR ROSADO GOLD */
 .navbar-pro{
 background:linear-gradient(90deg,#E75480,#d4af37);
@@ -41,10 +67,6 @@ height:auto;
 border-radius:20px;
 box-shadow:0 10px 30px rgba(0,0,0,.2);
 }
-  <!-- BOTÓN VOLVER -->
-<a href="https://paginaweb1.github.io/dise-os_web.com/" class="btn-volver">
-  <i class="fa fa-arrow-left"></i>
-</a>
 
 /* CARDS */
 .card-pro{
@@ -130,6 +152,11 @@ z-index:999;
 
 <body>
 
+<!-- BOTÓN VOLVER -->
+<a href="https://paginaweb1.github.io/dise-os_web.com/" class="btn-volver">
+  <i class="fas fa-arrow-left"></i>
+</a>
+
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-pro">
 <div class="container">
@@ -149,16 +176,13 @@ z-index:999;
 <div class="container video-box">
 <video autoplay muted loop controls>
 <source src="video.mp4" type="video/mp4">
-
+Tu navegador no soporta video
 </video>
 </div>
 
 <!-- PRODUCTOS -->
 <div class="container py-5">
 <div class="row g-4">
-
-<!-- 8 CARDS -->
-<!-- Puedes cambiar imágenes flor1.jpg hasta flor8.jpg -->
 
 <!-- CARD 1 -->
 <div class="col-lg-3 col-md-6">
@@ -168,7 +192,7 @@ z-index:999;
 <p>Rosas premium + tarjeta</p>
 <div class="precio">$95.000</div>
 <p>Ref: FL01</p>
-<a href="https://wa.me/573?text=Quiero el ramo FL01" class="btn btn-comprar">
+<a href="https://wa.me/573013298315?text=Quiero el ramo FL01" class="btn btn-comprar">
 <i class="fab fa-whatsapp"></i> Comprar
 </a>
 </div>
@@ -182,7 +206,7 @@ z-index:999;
 <p>Rosas + peluche</p>
 <div class="precio">$120.000</div>
 <p>Ref: FL02</p>
-<a href="https://wa.me/573?text=Quiero el ramo FL02" class="btn btn-comprar">Comprar</a>
+<a href="https://wa.me/573013298315?text=Quiero el ramo FL02" class="btn btn-comprar">Comprar</a>
 </div>
 </div>
 
@@ -194,7 +218,7 @@ z-index:999;
 <p>Rosas importadas</p>
 <div class="precio">$150.000</div>
 <p>Ref: FL03</p>
-<a href="https://wa.me/573?text=Quiero el ramo FL03" class="btn btn-comprar">Comprar</a>
+<a href="https://wa.me/573013298315?text=Quiero el ramo FL03" class="btn btn-comprar">Comprar</a>
 </div>
 </div>
 
@@ -218,7 +242,7 @@ z-index:999;
 <p>Rosas + chocolates</p>
 <div class="precio">$130.000</div>
 <p>Ref: FL05</p>
-<a href="https://wa.me/573?text=Quiero el ramo FL05" class="btn btn-comprar">Comprar</a>
+<a href="https://wa.me/573013298315?text=Quiero el ramo FL05" class="btn btn-comprar">Comprar</a>
 </div>
 </div>
 
@@ -230,7 +254,7 @@ z-index:999;
 <p>Rosas rojas</p>
 <div class="precio">$99.000</div>
 <p>Ref: FL06</p>
-<a href="https://wa.me/573?text=Quiero el ramo FL06" class="btn btn-comprar">Comprar</a>
+<a href="https://wa.me/573013298315?text=Quiero el ramo FL06" class="btn btn-comprar">Comprar</a>
 </div>
 </div>
 
@@ -242,7 +266,7 @@ z-index:999;
 <p>Rosas rosadas</p>
 <div class="precio">$105.000</div>
 <p>Ref: FL07</p>
-<a href="https://wa.me/573?text=Quiero el ramo FL07" class="btn btn-comprar">Comprar</a>
+<a href="https://wa.me/573013298315?text=Quiero el ramo FL07" class="btn btn-comprar">Comprar</a>
 </div>
 </div>
 
@@ -254,14 +278,14 @@ z-index:999;
 <p>Edición especial</p>
 <div class="precio">$180.000</div>
 <p>Ref: FL08</p>
-<a href="https://wa.me/573?text=Quiero el ramo FL08" class="btn btn-comprar">Comprar</a>
+<a href="https://wa.me/573013298315?text=Quiero el ramo FL08" class="btn btn-comprar">Comprar</a>
 </div>
 </div>
 
 </div>
 </div>
 
-<!-- TESTIMONIOS PRO -->
+<!-- TESTIMONIOS -->
 <div class="container py-5">
 <h2 class="text-center mb-5">Clientes felices ⭐</h2>
 
@@ -270,24 +294,24 @@ z-index:999;
 <div class="col-md-4">
 <div class="testimonio text-center">
 <h5 class="fw-bold">Mariana Gómez</h5>
-<div style="color:#FFD700;font-size:18px;">★★★★★</div>
-<p>"El ramo llegó perfecto y puntual. Quedé enamorada del servicio 💐"</p>
+<div style="color:#FFD700;">★★★★★</div>
+<p>"El ramo llegó perfecto y puntual. Quedé enamorada 💐"</p>
 </div>
 </div>
 
 <div class="col-md-4">
 <div class="testimonio text-center">
 <h5 class="fw-bold">Carlos Rodríguez</h5>
-<div style="color:#FFD700;font-size:18px;">★★★★★</div>
-<p>"Compré para aniversario y fue un éxito total. Calidad premium."</p>
+<div style="color:#FFD700;">★★★★★</div>
+<p>"Compré para aniversario y fue un éxito total."</p>
 </div>
 </div>
 
 <div class="col-md-4">
 <div class="testimonio text-center">
 <h5 class="fw-bold">Valentina Torres</h5>
-<div style="color:#FFD700;font-size:18px;">★★★★★</div>
-<p>"La mejor floristería de Bucaramanga. Super recomendados."</p>
+<div style="color:#FFD700;">★★★★★</div>
+<p>"La mejor floristería de Bucaramanga."</p>
 </div>
 </div>
 
@@ -296,62 +320,26 @@ z-index:999;
 
 <!-- CONTACTO -->
 <div class="contacto">
-<div class="container">
-<div class="row text-center">
-
-<div class="col-md-6">
+<div class="container text-center">
 <h4>📞 Contacto</h4>
-<p>WhatsApp: 32000000 - 3000000</p>
-<p>Envíos a Bucaramanga y área metropolitana</p>
-</div>
+<p>WhatsApp: 3244960499 - 3013298315</p>
 
-<div class="col-md-6">
 <h4>📍 Ubicación</h4>
-<p>Calle 00 #00-00</p>
-<iframe src="https://maps.google.com/maps?q=bucaramanga&t=&z=13&ie=UTF8&iwloc=&output=embed"
-width="100%" height="200" style="border:0;border-radius:15px;"></iframe>
-</div>
-
-</div>
-
-<!-- REDES -->
-<div class="text-center redes mt-4">
-<h4>Síguenos</h4>
-
-<a href="" target="_blank">
-<i class="fab fa-facebook"></i>
-</a>
-
-<a href="" target="_blank">
-<i class="fab fa-instagram"></i>
-</a>
-
-<a href="" target="_blank">
-<i class="fab fa-tiktok"></i>
-</a>
-
-</div>
+<p>Calle 45 #14-20 Parque Romero</p>
 </div>
 </div>
 
 <!-- FOOTER -->
 <div class="footer-pro">
 <p>Colombia - Santander</p>
-★★★★★
 <p>© 2026</p>
 </div>
 
 <!-- WHATSAPP -->
-<a href="https://wa.me/573" class="whatsapp">
+<a href="https://wa.me/573013298315" class="whatsapp">
 <i class="fab fa-whatsapp"></i>
 </a>
+
 </body>
 </html>
-
-
-
-
-
-
-
 
